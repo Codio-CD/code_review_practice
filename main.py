@@ -64,13 +64,9 @@ def main():
                      print("Invalid Response")
                      break
               
-              
-              
-       #print(list)
        print(arithmetic_arranger(list))
               
               
 if __name__ == '__main__':
        main()
 
-#print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
