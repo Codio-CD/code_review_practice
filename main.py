@@ -44,3 +44,29 @@ def arithmetic_arranger(problems, show_result=False):
     return arranged_problems
 
 
+def main():
+       list = []
+       getMore = True
+       user_problems = input("Enter a math problem to rearrange: ")
+       print(str(user_problems))
+       list.append(str(user_problems))
+       
+       while getMore == True:
+              getAnother = input("Would you like to enter another? (Y or N): ")
+              if getAnother == "Y":
+                     user_problems_add = input("Enter a math problem to rearrange: ")
+                     list.append(str(user_problems_add))
+                     
+              elif getAnother == "N":
+                     getMore == False
+                     print("Okay, rearranging your problems!")
+                     break
+              else:
+                     print("Invalid Response")
+                     break
+              
+       print(arithmetic_arranger(list))
+              
+              
+if __name__ == '__main__':
+       main()
